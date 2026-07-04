@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- 核心设备树 -->
+    <project name="Exynos3475/android_device_samsung_on5ltetmo" 
+             path="device/samsung/on5ltetmo" 
+             remote="github" 
+             revision="lineage-18.1" />
+
+    <!-- 通用 Exynos3475 设备树（包含 SoC 级配置） -->
+    <project name="Exynos3475/android_device_samsung_exynos3475-common" 
+             path="device/samsung/exynos3475-common" 
+             remote="github" 
+             revision="lineage-18.1" />
+
+    <!-- 内核源码（3.18 或 4.4，非 Treble 下完全兼容 A11） -->
+    <project name="Exynos3475/android_kernel_samsung_exynos3475" 
+             path="kernel/samsung/exynos3475" 
+             remote="github" 
+             revision="lineage-18.1" />
+
+    <!-- 供应商私有库（Vendor Blobs） 
+         非 Treble 下这些库会被直接复制到 /system，不依赖 vendor 分区 -->
+    <project name="Exynos3475/android_vendor_samsung" 
+             path="vendor/samsung" 
+             remote="github" 
+             revision="lineage-18.1" />
+    <project name="LineageOS/android_hardware_samsung_slsi_exynos" 
+         path="hardware/samsung_slsi/exynos" 
+         remote="github" 
+         revision="lineage-18.1" />
+    <project name="LineageOS/android_hardware_samsung_slsi_exynos3475" 
+         path="hardware/samsung_slsi/exynos3475" 
+         remote="github" 
+         revision="lineage-18.1" />
+</manifest>
